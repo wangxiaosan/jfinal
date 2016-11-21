@@ -25,6 +25,16 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
+
+            <!-- 配置Tomcat插件 -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <port>8081</port>
+                    <path>/</path>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -137,27 +147,10 @@
             <artifactId>guava</artifactId>
             <version>14.0-rc2</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/com.jfinal/cos -->
         <dependency>
             <groupId>com.jfinal</groupId>
-            <artifactId>cos</artifactId>
-            <version>26Dec2008</version>
-        </dependency>
-
-
-        <!-- https://mvnrepository.com/artifact/com.jfinal/jfinal-ext -->
-        <dependency>
-            <groupId>com.jfinal</groupId>
-            <artifactId>jfinal-ext</artifactId>
-            <version>3.1.4</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.mortbay.jetty/jetty-maven-plugin -->
-        <dependency>
-            <groupId>org.mortbay.jetty</groupId>
-            <artifactId>jetty-maven-plugin</artifactId>
-            <version>8.1.16.v20140903</version>
+            <artifactId>jfinal</artifactId>
+            <version>2.2</version>
         </dependency>
 
     </dependencies>
