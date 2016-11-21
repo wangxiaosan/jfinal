@@ -157,6 +157,12 @@
             <artifactId>jfinal</artifactId>
             <version>2.2</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.jfinal/jfinal -->
+        <dependency>
+            <groupId>com.jfinal</groupId>
+            <artifactId>jfinal</artifactId>
+            <version>2.2</version>
+        </dependency>
 
     </dependencies>
 
