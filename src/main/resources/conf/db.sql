@@ -16,3 +16,15 @@ INSERT INTO `blog` VALUES ('2', 'test 1', 'test 1');
 INSERT INTO `blog` VALUES ('3', 'test 2', 'test 2');
 INSERT INTO `blog` VALUES ('4', 'test 3', 'test 3');
 INSERT INTO `blog` VALUES ('5', 'test 4', 'test 4');
+
+---- 2016-11-23(user)
+
+create table users(
+`id` int(11) not null auto_increment primary key,
+`username` varchar(15) not null,
+`password` varchar(20) not null,
+`available` boolean not null DEFAULT TRUE,
+`gender` enum('m','f'),
+`email` varchar(45),
+`qq` VARCHAR (15)
+);
